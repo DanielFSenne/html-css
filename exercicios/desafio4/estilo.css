@@ -25,6 +25,7 @@ html, body {
     
 }
 
+
 header {
     background-color: black;
     color: white;
@@ -78,12 +79,14 @@ section.imagem > p {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
 }
 section#img01 {
-    background-image: url('../desafio4/imagens/background001.jpg');
+
+    background-image: url("../desafio4/imagens/background001.jpg");
     background-position: right center;
     background-size: cover;
 
 }
 section#img02 {
+
     background-image: url('../desafio4/imagens/background002.jpg');
     background-size: cover;
 
