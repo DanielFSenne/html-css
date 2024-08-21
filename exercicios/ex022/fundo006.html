@@ -13,8 +13,16 @@
             background-repeat: inherit;
             background-size: cover;
             background-attachment: fixed;*/
-            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat ;
             background-size: cover;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height:100vh ;
+            margin: 0px;
+            padding: 0;
         }
 
         /* Shorthand - Background 
@@ -22,12 +30,17 @@
 
     
         main {
+
             background-color: white;
             max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1 solid darkblue;
-            border-radius: 10px;
+            height: 500px;
+            overflow-y: scroll;
+            padding: 20px;
+            text-align: justify;
+            box-shadow: 5px 5px 5px grey;
         }
     </style>
 </head>
