@@ -13,6 +13,14 @@
     table {
         width: 500px;
         border-collapse: collapse;
+        position: relative;
+
+    }
+    caption {
+        font-size: 1.50em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgrey;
     }
     td, th {
         border: 1px solid black;
@@ -21,6 +29,15 @@
     thead, tfoot {
         background-color: grey;
         color: white;
+    } thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: #383838;
+    }
+    thead
+    tbody > tr:nth-child(2n) {
+        background-color: lightgray;
+
     }
     tr :nth-child(2) {
         text-align: right;
@@ -35,6 +52,7 @@
     <!--Anatomia de Tabelas Grandes
     TABLE
     
+    CAPTION
      THEAD- TR, TD, TH
      
       TBODY- TR, TD, TH
@@ -44,10 +62,14 @@
       -->
 
       <table>
+
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
 
         </thead>
@@ -109,7 +131,7 @@
                 <td>4 145 040</td>
             </tr>
             <tr>
-                <td>Espírito Santp</td>
+                <td>Espírito Santo</td>
                 <td>4 102 129</td>
             </tr>
             <tr>
@@ -162,10 +184,11 @@
             </tr>
 
         </tbody>
+       
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td><strong>210.147.125</strong></td>
+                <th scope="row">Total de Habitantes</th>
+                <td ><strong>210.147.125</strong></td>
             </tr>
 
         </tfoot>
